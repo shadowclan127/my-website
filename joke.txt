@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Click the Link</title>
+</head>
+<body>
+	<p>Click the link below to trigger the harmless virus:</p>
+	<a href="#" onclick="runVirus()">Click here</a>
+
+	<script>
+		function runVirus() {
+			let running = true;
+			while (running) {
+				let key = prompt("Enter the key to stop the virus:");
+				if (key === "happy birthday") {
+					alert("stopped!");
+					running = false;
+				}
+			}
+		}
+	</script>
+</body>
+</html>
